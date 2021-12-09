@@ -1,0 +1,181 @@
+
+
+div.bottom_container
+{
+    background-color: #66BFBF;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+p.first_para
+{
+    color: #66BFBF;
+    font-size: 50px;
+    font-family: 'Pacifico';
+}
+
+h2,h1
+{
+    color: #66BFBF;
+    margin-bottom: 10px;
+    font-style:normal;
+}    
+
+div.top_container
+{
+    text-align: center;
+    font-family:"Times New Roman", Times, serif;
+    background-color:#EAF6F6;
+}
+
+body
+{
+    text-align: center;
+    line-height: 2;
+    min-height: 100vh;
+    position: relative;
+}
+
+hr
+{
+    border-style: dotted;
+    
+    height:20px;
+    width:100px;
+    color:#66BFBF;
+    border-width: 10px 0px 0px 0px;
+    margin-top: 20px;
+
+}
+
+ a:hover
+ {
+     color: thistle;
+ }
+
+ button
+ {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+label
+{
+    color: #045858;
+}
+input {
+    width: 400px;
+    /* padding: 0 20px; */
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.Signature
+{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    margin: 0;
+}
+
+input
+{
+    width: 50px;
+    height: 20px;
+}
+
+table
+{
+    margin: auto;
+}
+
+#tables, th
+{
+    border: 1px solid black;
+}
+
+th, td
+{
+    padding: 15px;
+}
+
+.para
+{
+    color: #045858;
+    font-size: 20px;
+    font-family: 'Pacifico';
+}
+
+.information
+{
+    color: #045858;
+    font-size: 20px;
+    font-family: 'Pacifico';
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+.adjust{
+    padding: 10px;
+    height: 439px;
+}
+
+.gate{
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+.refer li{
+    text-align: left;    
+    font-size: 20px;
+    color: black;
+}
+
+.fault_table{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #2196F3;
+    margin: 0px 130px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.fault_table > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+
+.blank{
+    height: 60px;
+}
+
+.errorcol{
+    text-align: left;
+}
+
