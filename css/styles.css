@@ -1,12 +1,10 @@
-
-
 div.bottom_container
 {
     background-color: #66BFBF;
     padding: 0px;
     height: 40px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
@@ -24,6 +22,10 @@ h2,h1
     font-style:normal;
 }    
 
+span
+{
+    color: #66BFBF;
+}
 div.top_container
 {
     text-align: center;
