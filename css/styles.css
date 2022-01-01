@@ -12,7 +12,7 @@ p.first_para
 {
     color: #66BFBF;
     font-size: 50px;
-    font-family: 'Pacifico';
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h2,h1
@@ -124,14 +124,14 @@ th, td
 {
     color: #045858;
     font-size: 20px;
-    font-family: 'Pacifico';
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .information
 {
     color: #045858;
     font-size: 20px;
-    font-family: 'Pacifico';
+    font-family: 'Times New Roman', Times, serif;
     text-align: left;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -180,4 +180,52 @@ th, td
 .errorcol{
     text-align: left;
 }
+
+.container
+{
+    position: relative;
+}
+
+#containers-out
+{
+    top: 8px;
+    right: -35px;
+    position: absolute;
+}
+
+#containers-text-out
+{
+    top: 8px;
+    right: 30px;
+    position: absolute;
+}
+
+#containers-A
+{
+    top: -35px;
+    left: -113px;
+    position: absolute;
+}
+
+#containers-text-A
+{
+    top: -35px;
+    left: -175px;
+    position: absolute;
+}
+
+#containers-B
+{
+    bottom: -25px;
+    left: -113px;
+    position: absolute;
+}
+
+#containers-text-B
+{
+    bottom: -25px;
+    left: -175px;
+    position: absolute;
+}
+
 
