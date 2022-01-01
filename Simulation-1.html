@@ -79,6 +79,7 @@
             <!-- <th>stuckAtB</th> -->
             <th>Output</th>
             <!-- <th>stuckAtOut</th> -->
+            <th>Expected Output</th>
             </tr>
         </table>
 
@@ -159,16 +160,19 @@
                 var rows='';
                 
                 rows=document.getElementById('tables').innerHTML;
+                var actual=!(Number(tempB&tempA))==true?1:0;
                 if(stuckAtA!=-1||stuckAtB!=-1||stuckAtOut!=-1){
                     rows=rows+"<tr style='background-color:red'><td id='tables'>"+tempA+
                     "</td><td id='tables'>"+tempB+
-                    "</td><td id='tables'>"+result+"</td>"+"</tr>";
+                    "</td><td id='tables'>"+result+"</td>"+"<td id='tables'>"+actual+
+                    "</td>"+"</tr>";
                     document.getElementById('tables').innerHTML=rows;
                 }
                 else{
                     rows=rows+"<tr><td id='tables'>"+tempA+
                     "</td><td id='tables'>"+tempB+
-                    "</td><td id='tables'>"+result+"</td>"+"</tr>";
+                    "</td><td id='tables'>"+result+"</td>"+"<td id='tables'>"+actual+
+                    "</td>"+"</tr>";
                     document.getElementById('tables').innerHTML=rows;
                 }
                 
