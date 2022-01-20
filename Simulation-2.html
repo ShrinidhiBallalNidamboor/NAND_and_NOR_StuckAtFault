@@ -42,12 +42,12 @@
 
         <div class="topnav">
             <a class="active" href="index.html">Back</a>
-            <a href="Procedure.html">Instructions</a>
+            <a href="Procedure.html">Procedure</a>
             <a href="Simulation-1.html">Simulation-1</a>
             <a href="Simulation-2.html">Simulation-2</a>
         </div>
         <p class="first_para">Simulation-2</p>
-            <table>
+            <table style="position: absolute; margin-left: 200px; margin-top: 50px;">
                 <tr>
                 <td style="width: 125px;"><label id="A-text">A: </label><input id="A"type="number" min="0" max="1"></input><br><br><label id="B-text">B: </label><input id="B" type="number" min="0" max="1"></input></td>
                 <td>
@@ -64,12 +64,10 @@
                 </tr>
             </table>
         <br><br>
-        <button type="submit" id="myBtn" class="btn btn-primary btn-block" style="background-color: #76C2AF;">Run</button>
-       
-        <hr>
-        <p class="para">Click on Run to update the truth table</p>
+        <button type="submit" id="myBtn" class="btn btn-primary btn-block" style="background-color: #76C2AF;margin-left: 1000px; margin-top: -50px; display: block; position: absolute;">Run</button>
+        <button type="submit" id="myReset" class="btn btn-primary btn-block" style="background-color: #76C2AF;margin-left: 1100px; margin-top: -50px; display: block; position: absolute;">Reset</button>
         <br>
-        <table id="tables">
+        <table id="tables" style="margin-left: 1000px; margin-top: -18px;">
             <tr>
             <th>A</th>
             <!-- <th>stuckAtA</th> -->
@@ -82,6 +80,7 @@
         </table>
 
         <script>
+            var limit=0;
             var x = document.getElementById("myBtn");
             if (x.addEventListener) {
             x.addEventListener("click", myFunction);
@@ -107,6 +106,14 @@
                     alert("Enter correct inputs");
                     inputs[0].value='';
                     inputs[1].value='';
+                    return;
+                }
+
+                
+                limit++;
+                if(limit>=5)
+                {    
+                    alert("Reset to enter more values into the table");
                     return;
                 }
 
@@ -173,10 +180,22 @@
                     document.getElementById('tables').innerHTML=rows;
                 }
             }
+            var y = document.getElementById("myReset");
+            if (y.addEventListener) {
+            y.addEventListener("click", myReset);
+            } else if (y.attachEvent) {
+            y.attachEvent("onclick", myReset);
+            }
+            
+            function myReset() 
+            {
+                rows=document.getElementById('tables').innerHTML='<tr><th>A</th><th>B</th><th>Output</th><th>Expected Output</th></tr>';
+                limit=0;
+            }
         </script>
-        <hr>
+        <br><br>
         <div class="bottom_container">
-            <p class="Signature">Team Members: Shrinidhi Ballal Nidamboor, Aakash G. Acharya, Shilwant Roy, Ajay Vikram P, Nitin Jayadeep</p>
+            <p class="Signature" style="height: 10px;"></p>
         </div>
 </body>
  
