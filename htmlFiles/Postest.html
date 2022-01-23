@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>NAND and NOR</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,7 +44,7 @@
     </style>
 
     <div class="topnav">
-      <a class="active" href="index.html">Home</a>
+      <a class="active" href="../index.html">Home</a>
       <a href="Aim.html">Aim</a>
       <a href="Theory.html">Theory</a>
       <a href="Pretest.html">Pretest</a>
@@ -57,38 +57,38 @@
     <p class="first_para">Posttest</p>
     <div class="adjust">
       <div id="q1" style="text-align: left; padding-left: 100px">
-        <h2>
+        <h2 style="font-size: 17px;">
           1. If one of the input of the NAND gate is logic low, then the output
           is always?
         </h2>
       </div>
       <div id="q2" style="text-align: left; padding-left: 100px">
-        <h2>
+        <h2 style="font-size: 17px;">
           2. If one of the input of the NOR gate is logic high, then the output
           is always?
         </h2>
       </div>
       <div id="q3" style="text-align: left; padding-left: 100px">
-        <h2>
+        <h2 style="font-size: 17px;">
           3. If the AND gate is always giving a low output, then which among the
           following stuck at fault is?
         </h2>
       </div>
       <div id="q4" style="text-align: left; padding-left: 100px">
-        <h2>
+        <h2 style="font-size: 17px;">
           4. If the OR gate is always giving a low output, then which among the
           following stuck at fault is?
         </h2>
       </div>
       <div id="q5" style="text-align: left; padding-left: 100px">
-        <h2 style="padding-right: 200px">
+        <h2 style="padding-right: 200px; font-size: 17px;">
           5. How many stuck at faults are possible for 2 input NAND gate if the
           gate always gives high output considering, that more than one stuck at
           fault is possible?
         </h2>
       </div>
       <div id="q6" style="text-align: left; padding-left: 100px">
-        <h2 style="padding-right: 200px">
+        <h2 style="padding-right: 200px; font-size: 17px;">
           6.For a 2 input NAND gate, given that both the inputs are stuck-at
           logic 1 and if there is no fault in the output wire, then regardless
           of the applied input values, the output is always?
@@ -96,7 +96,7 @@
       </div>
 
       <div id="q7" style="text-align: left; padding-left: 100px">
-        <h2 style="padding-right: 200px">
+        <h2 style="padding-right: 200px; font-size: 17px;">
           7. For a 2 input NOR gate, given that both the inputs are stuck-at
           logic 0 and if there is no fault in the output wire, then regardless
           of the applied input values, the output is always?
@@ -104,7 +104,7 @@
       </div>
 
       <div id="q8" style="text-align: left; padding-left: 100px">
-        <h2 style="padding-right: 200px">
+        <h2 style="padding-right: 200px; font-size: 17px;">
           8.If A and B are the two inputs of a 2 input NAND gate, then which of
           the following stuck-at fault combinations could be responsible for
           making the detected output as logic 0?
@@ -112,7 +112,7 @@
       </div>
 
       <div id="q9" style="text-align: left; padding-left: 100px">
-        <h2 style="padding-right: 200px">
+        <h2 style="padding-right: 200px; font-size: 17px;">
           9.If A and B are the two inputs of a 2 input NOR gate, then which of
           the following stuck-at fault combinations could be responsible for
           making the detected output as logic 1?
@@ -120,7 +120,7 @@
       </div>
 
       <div id="q10" style="text-align: left; padding-left: 100px">
-        <h2 style="padding-right: 200px">
+        <h2 style="padding-right: 200px; font-size: 17px;">
           10.If all the wires of a two input NAND gate are stuck-at logic 0,
           then the output is always?
         </h2>
@@ -231,7 +231,7 @@
               document.getElementById("block-" + j).style.border =
                 "3px solid limegreen";
               document.getElementById("result-" + j).style.color = "limegreen";
-              document.getElementById("result-" + j).innerHTML = "Correct!";
+              document.getElementById("result-" + j).innerHTML = " Correct!";
               result++;
             }
           } else {
@@ -239,7 +239,7 @@
               document.getElementById("block-" + j).style.border =
                 "3px solid red";
               document.getElementById("result-" + j).style.color = "red";
-              document.getElementById("result-" + j).innerHTML = "Incorrect!";
+              document.getElementById("result-" + j).innerHTML = " Incorrect!";
             }
           }
         }

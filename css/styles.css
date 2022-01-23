@@ -56,12 +56,13 @@ body
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 label
 {
     color: black;
+    font-size: 17px;
 }
 input {
     width: 400px;
@@ -70,7 +71,7 @@ input {
 
 input,
 input::-webkit-input-placeholder {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 3;
 }
 
@@ -113,14 +114,14 @@ th, td
 .para
 {
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .information
 {
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
     padding-top: 50px;
@@ -143,7 +144,7 @@ th, td
 
 .refer li{
     text-align: left;    
-    font-size: 20px;
+    font-size: 17px;
     color: black;
 }
 
@@ -159,7 +160,7 @@ th, td
 .fault_table > div{
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
