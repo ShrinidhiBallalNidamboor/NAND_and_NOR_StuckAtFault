@@ -41,13 +41,19 @@
         </style>
 
         <div class="topnav">
-            <a class="active" href="index.html">Back</a>
+            <a class="active" href="index.html">Home</a>
+            <a href="Aim.html">Aim</a>
+            <a href="Theory.html">Theory</a>
+            <a href="Pretest.html">Pretest</a>
             <a href="Procedure.html">Procedure</a>
             <a href="Simulation-1.html">Simulation-1</a>
             <a href="Simulation-2.html">Simulation-2</a>
+            <a href="Postest.html">Posttest</a>
+            <a href="Reference.html">Reference</a>
         </div>
         <p class="first_para">Simulation-2</p>
         <table>
+            <p style="color: red;">NOTE:The "RED" colour (if appears in any row of the table generated below) indicates that there is a fault in the gate and has nothing to do with the correctness of the output.</p>
             <tr>
                 <td style="vertical-align: top;">
                     <table>
@@ -174,7 +180,7 @@
                 rows=document.getElementById('tables').innerHTML;
                 var actual=!(Number(tempB+tempA))==true?1:0;
                 if(stuckAtA!=-1||stuckAtB!=-1||stuckAtOut!=-1){
-                    rows=rows+"<tr style='background-color:red'><td id='tables'>"+tempA+
+                    rows=rows+"<tr style='background-color:#f65353'><td id='tables'>"+tempA+
                     "</td><td id='tables'>"+tempB+
                     "</td><td id='tables'>"+result+"</td>"+"<td id='tables'>"+actual+
                     "</td>"+"</tr>";
