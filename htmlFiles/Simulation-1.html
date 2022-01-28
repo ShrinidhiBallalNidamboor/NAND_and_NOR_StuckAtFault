@@ -46,14 +46,16 @@
             <a href="Theory.html">Theory</a>
             <a href="Pretest.html">Pretest</a>
             <a href="Procedure.html">Procedure</a>
-            <a href="Simulation-1.html">Simulation-1</a>
-            <a href="Simulation-2.html">Simulation-2</a>
+            <a href="Simulation-1.html">Simulation</a>
             <a href="Postest.html">Posttest</a>
             <a href="Reference.html">Reference</a>
         </div>
+        <button onclick="window.location.href='Simulation-1.html'" class="btn btn-primary btn-block" style="background-color: #359999; display: block; position: absolute; top:70px;">Simulator-1</button>
+        <button onclick="window.location.href='Simulation-2.html'" class="btn btn-primary btn-block" style="background-color: #66BFBF; display: block; position: absolute; margin-left: 160px;top:70px;">Simulator-2</button>
         <p class="first_para">Simulation-1</p>
+        <p style="color: red;">NOTE:The "RED" colour (if appears in any row of the table generated below) indicates there is a stuck-at-fault in the gate and has nothing to do with the correctness of the output.</p>
+        <br>
         <table>
-            <p style="color: red;">NOTE:The "RED" colour (if appears in any row of the table generated below) indicates there is a stuck-at-fault in the gate and has nothing to do with the correctness of the output.</p>
             <tr>
                 <td style="vertical-align: top;">
                     <table>
@@ -129,7 +131,7 @@
 
                 
                 limit++;
-                if(limit>=5)
+                if(limit>=6)
                 {    
                     alert("Reset to enter more values into the table");
                     return;
