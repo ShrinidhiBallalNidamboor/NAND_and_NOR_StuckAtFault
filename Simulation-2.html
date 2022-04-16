@@ -41,7 +41,7 @@
         </style>
 
         <div class="topnav">
-            <a class="active" href="../index.html">Home</a>
+            <a class="active" href="index.html">Home</a>
             <a href="Aim.html">Aim</a>
             <a href="Theory.html">Theory</a>
             <a href="Pretest.html">Pretest</a>
@@ -50,10 +50,10 @@
             <a href="Postest.html">Posttest</a>
             <a href="Reference.html">Reference</a>
         </div>
-        <button onclick="window.location.href='Simulation-1.html'" class="btn btn-primary btn-block" style="background-color: #359999; display: block; position: absolute; top:70px;">Simulator-1</button>
-        <button onclick="window.location.href='Simulation-2.html'" class="btn btn-primary btn-block" style="background-color: #66BFBF; display: block; position: absolute; margin-left: 160px;top:70px;">Simulator-2</button>
-        <p class="first_para">Simulation-1</p>
-        <p style="color: red;">NOTE:The "RED" colour (if appears in any row of the table generated below) indicates there is a stuck-at-fault in the gate and has nothing to do with the correctness of the output.</p>
+        <button onclick="window.location.href='Simulation-1.html'" class="btn btn-primary btn-block" style="background-color: #66BFBF; display: block; position: absolute; top:70px;">Simulator-1</button>
+        <button onclick="window.location.href='Simulation-2.html'" class="btn btn-primary btn-block" style="background-color: #359999; display: block; position: absolute; margin-left: 160px;top:70px;">Simulator-2</button>
+        <p class="first_para">Simulation-2</p>
+        <p style="color: red;">NOTE:The "RED" colour (if appears in any row of the table generated below) indicates there is a stuck-at-fault in the gate and has nothing to do with the correctness of the output.</p>    
         <br>
         <table>
             <tr>
@@ -69,14 +69,13 @@
                                 <input id="containers-B" type="number" class="form-control" name="SAB" min="0" max="1">
                                 <label id="containers-text-out">Fault at output: </label>
                                 <input id="containers-out"type="number" name="SAO" min="0" max="1">
-                                <img src="../Images/NAND.png">
+                                <img src="../Images/NOR.png">
                             </div>  
                         </td>
                         </tr>
                     </table>
                 </td>
-                <td style="padding-left: 100px;vertical-align: top;">
-                    
+                <td style="padding-left: 100px;vertical-align: top; margin-top: 0px;">
                     <button type="submit" id="myBtn" class="btn btn-primary btn-block" style="background-color: #76C2AF; display: block; position: absolute;">Run</button>
                     <button type="submit" id="myReset" class="btn btn-primary btn-block" style="background-color: #76C2AF; margin-left:100px; display: block; position: absolute;">Reset</button>
                     <br><br>
@@ -96,9 +95,6 @@
                 </td>
             </tr>
         </table>
-        
-        <br><br>
-
         <script>
             var limit=0;
             var x = document.getElementById("myBtn");
@@ -169,7 +165,7 @@
 
                 if(stuckAtOut==-1)
                 {
-                    if(!(A&B)===false)
+                    if((!Number(A+B))==false)
                     {
                         result=0;
                     }
@@ -182,10 +178,9 @@
                 {
                     result=stuckAtOut;
                 }
-                var rows='';
                 
                 rows=document.getElementById('tables').innerHTML;
-                var actual=!(Number(tempB&tempA))==true?1:0;
+                var actual=!(Number(tempB+tempA))==true?1:0;
                 if(stuckAtA!=-1||stuckAtB!=-1||stuckAtOut!=-1){
                     rows=rows+"<tr style='background-color:#f65353'><td id='tables'>"+tempA+
                     "</td><td id='tables'>"+tempB+
@@ -200,7 +195,6 @@
                     "</td>"+"</tr>";
                     document.getElementById('tables').innerHTML=rows;
                 }
-                
             }
             var y = document.getElementById("myReset");
             if (y.addEventListener) {
