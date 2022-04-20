@@ -15,6 +15,10 @@ p.first_para
     font-family: 'Times New Roman', Times, serif;
 }
 
+.tab {
+    tab-size: 2;
+}
+
 h2,h1
 {
     color: black;
