@@ -53,7 +53,7 @@
         <button onclick="window.location.href='Simulation-1.html'" class="btn btn-primary btn-block" style="background-color: #359999; display: block; position: absolute; top:70px;">Simulator-1</button>
         <button onclick="window.location.href='Simulation-2.html'" class="btn btn-primary btn-block" style="background-color: #66BFBF; display: block; position: absolute; margin-left: 160px;top:70px;">Simulator-2</button>
         <p class="first_para">Simulation-1</p>
-        <p style="color: red;">NOTE:The "RED" colour (if appears in any row of the table generated below) indicates there is a stuck-at-fault in the gate and has nothing to do with the correctness of the output.</p>
+        <p style="color: red;">NOTE:The "RED" colour indicates generated result doesnt match with expected result</p>
         <br>
         <table>
             <tr>
@@ -186,7 +186,7 @@
                 
                 rows=document.getElementById('tables').innerHTML;
                 var actual=!(Number(tempB&tempA))==true?1:0;
-                if(stuckAtA!=-1||stuckAtB!=-1||stuckAtOut!=-1){
+                if(actual!=result){
                     rows=rows+"<tr style='background-color:#f65353'><td id='tables'>"+tempA+
                     "</td><td id='tables'>"+tempB+
                     "</td><td id='tables'>"+result+"</td>"+"<td id='tables'>"+actual+
